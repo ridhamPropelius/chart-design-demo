@@ -10,13 +10,11 @@ const Channel: React.FC = () => {
     const [selected, setSelected] = React.useState('hour');
     const [selectedData, setSelectedData] = React.useState(data[selected])
 
-    console.log({selectedData});
     
-    let totalComm = Number(selectedData.reduce((a, b) => { return a.noOfMessage + b.noOfMessage },0))
-
+    let totalComm = selectedData.reduce((a, b) => a + b.noOfMessage ,0)
     useEffect(() => {
         setSelectedData(data[selected])
-        totalComm = Number(selectedData.reduce((a, b) => { return a.noOfMessage + b.noOfMessage },0))
+        totalComm = Number(selectedData.reduce((a, b) => a + b.noOfMessage ,0))
     }, [selected])
 
     return (
@@ -58,8 +56,6 @@ const Channel: React.FC = () => {
             <div>
                 <Progressbar title="All" totalComment={totalComm} />
                 {selectedData.map((data, index) =>{   
-                    console.log("comment :: ",data.noOfMessage);
-                    console.log("Total comment :: ",totalComm);
                     return <Progressbar key={index} title={data.title} individualComment={data.noOfMessage} totalComment={totalComm} logo={data.logo}/>
                 }
                 )}
