@@ -4,6 +4,7 @@ import OFFICE from './svg/office.svg'
 import ADOBE from './svg/softwareadobe.svg'
 import FILTER from './svg/filter.svg'
 import PROGRESS from './svg/progress.svg'
+import PROGRESS_UP from './svg/progressUP.svg'
 
 export const ASSETS = {
     SVGS:{
@@ -12,6 +13,7 @@ export const ASSETS = {
         OFFICE,
         ADOBE,
         FILTER,
-        PROGRESS
+        PROGRESS,
+        PROGRESS_UP,
     }
 }

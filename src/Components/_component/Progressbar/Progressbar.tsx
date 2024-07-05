@@ -17,7 +17,7 @@ const Progressbar:React.FC<BarDataType> = ({title,totalComment,individualComment
                     {logo && <Image width={20} height={20} src={logo} alt='logo'/>}{title}</span>
                 <span>{title==='All'?`${totalComment} - ${percentage}%`:`${individualComment} - ${percentage}%`}-WoW</span>
             </div>
-            <div className="flex w-full h-2.5 bg-gray-200 rounded-full overflow-hidden dark:bg-neutral-700" role="progressbar">
+            <div className="flex w-full h-2.5 bg-gray-200 rounded-full overflow-hidden dark:bg-neutral-100" role="progressbar">
                 <div className={`flex flex-col justify-center rounded-full overflow-hidden bg-blue-600 text-xs text-white text-center whitespace-nowrap transition duration-500 dark:bg-blue-500`} style={{width:`${percentage}%`}}></div>
             </div>
         </div>
