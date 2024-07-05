@@ -130,9 +130,9 @@ const Dashboard: React.FC = () => {
                         <div className="text-md text-slate-500 rounded-[8px] flex items-center gap-2 px-1 py-[3px] font-semibold h-11 border">
                             &lt;<span>27.06.2024 - 02.07.2024</span>&gt;
                         </div>
-                        <button className="border py-1 px-2 border-yellow-400 bg-yellow-50 rounded-md">
+                        <button className="border py-2 px-3 border-yellow-400 bg-yellow-50 rounded-md">
                             {/* Assuming ASSETS.SVGS.FILTER is imported correctly */}
-                            <Image height={25} width={25} src={ASSETS.SVGS.FILTER} alt="filter" />
+                            <Image height={17} width={17} src={ASSETS.SVGS.FILTER} alt="filter" />
                         </button>
                     </div>
                 </div>

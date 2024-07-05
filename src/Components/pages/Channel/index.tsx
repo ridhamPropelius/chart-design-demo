@@ -25,8 +25,9 @@ const Channel: React.FC = () => {
                         <span className={`text-3xl font-medium text-stone-700`}>Messages By Channel</span> &nbsp;
                     </div>
                     <div className="flex items-center gap-4 w-[360px] justify-end">
-                        <button className="border py-1 px-2 border-yellow-400 bg-yellow-50 rounded-md">
-                            <Image height={25} width={25} src={ASSETS.SVGS.FILTER} alt="filter" />
+                        <button className="border py-3 px-3 border-yellow-400 bg-yellow-50 rounded-md">
+                            {/* Assuming ASSETS.SVGS.FILTER is imported correctly */}
+                            <Image height={18} width={18} src={ASSETS.SVGS.FILTER} alt="filter" />
                         </button>
                         <div className={`text-xl bg-slate-100 rounded-[8px] grid grid-cols-3 gap-3 px-1 py-[3px] font-semibold h-11 border`}>
                             <button className={cn("h-full rounded-md flex min-w-16 justify-center cursor-pointer items-center ",
